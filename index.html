@@ -3,45 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shiv Shakti Enterprises | Job Placement Neemrana | Contact: 9571016093</title>
+  <meta name="description" content="Shiv Shakti Enterprises - Premier job placement & manpower solutions in Neemrana. Connecting talent with opportunity. Contact: 9571016093">
+  <meta name="keywords" content="job placement neemrana, jobs in neemrana, 10th pass jobs, 12th pass jobs, ITI jobs, operator jobs, manpower solutions neemrana">
+  <meta name="author" content="Shiv Shakti Enterprises">
+  <meta property="og:title" content="Shiv Shakti Enterprises | Job Placement Neemrana">
+  <meta property="og:description" content="Leading job placement and manpower solutions in Neemrana. Multiple openings with competitive salaries.">
+  <meta property="og:type" content="website">
   
+  <title>Shiv Shakti Enterprises | Premium Job Placement & Manpower Solutions Neemrana | Call: 9571016093</title>
+  
+  <!-- External Resources -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
+    /* ======================================
+       CSS VARIABLE DEFINITIONS - DESIGN SYSTEM
+       ====================================== */
     :root {
+      /* Primary Brand Colors */
       --primary-blue: #2563EB;
       --primary-indigo: #4F46E5;
+      --primary-violet: #7C3AED;
+      
+      /* Accent Colors */
       --accent-orange: #F59E0B;
+      --accent-amber: #F97316;
       --accent-cyan: #06B6D4;
+      --accent-teal: #14B8A6;
+      
+      /* Success & Status Colors */
       --success-green: #10B981;
+      --success-emerald: #059669;
+      --warning-yellow: #FBBF24;
+      --error-red: #EF4444;
+      --info-blue: #3B82F6;
+      
+      /* Purple Palette */
       --purple: #8B5CF6;
+      --purple-light: #A78BFA;
+      --purple-dark: #7C3AED;
+      
+      /* Neutral Colors */
       --dark: #0F172A;
       --dark-light: #1E293B;
+      --dark-lighter: #334155;
+      --gray-dark: #475569;
       --gray: #64748B;
+      --gray-light: #94A3B8;
+      --gray-lighter: #CBD5E1;
       --light: #F1F5F9;
+      --light-darker: #E2E8F0;
       --white: #FFFFFF;
+      
+      /* Gradient Definitions */
+      --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-indigo) 100%);
+      --gradient-success: linear-gradient(135deg, var(--success-green) 0%, var(--accent-teal) 100%);
+      --gradient-warning: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-amber) 100%);
+      --gradient-purple: linear-gradient(135deg, var(--purple) 0%, var(--primary-indigo) 100%);
+      --gradient-cosmic: linear-gradient(135deg, var(--primary-violet) 0%, var(--purple) 50%, var(--primary-indigo) 100%);
+      
+      /* Spacing System */
+      --spacing-xs: 0.5rem;
+      --spacing-sm: 1rem;
+      --spacing-md: 1.5rem;
+      --spacing-lg: 2rem;
+      --spacing-xl: 3rem;
+      --spacing-2xl: 4rem;
+      --spacing-3xl: 6rem;
+      
+      /* Border Radius */
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+      
+      /* Shadows */
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.1);
+      --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+      --shadow-2xl: 0 30px 80px rgba(0, 0, 0, 0.2);
+      
+      /* Transitions */
+      --transition-fast: 0.2s ease;
+      --transition-base: 0.3s ease;
+      --transition-slow: 0.5s ease;
+      --transition-bounce: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
+    /* ======================================
+       RESET & BASE STYLES
+       ====================================== */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       color: var(--dark);
       overflow-x: hidden;
       background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-base);
+    }
+
+    button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-family: inherit;
     }
 
     .font-display {
       font-family: 'Sora', sans-serif;
     }
 
-    /* Animated Background */
+    .font-mono {
+      font-family: 'Space Grotesk', monospace;
+    }
+
+    /* ======================================
+       ANIMATED BACKGROUND SYSTEM
+       ====================================== */
     .bg-animated {
       position: fixed;
       top: 0;
@@ -50,49 +162,110 @@
       height: 100%;
       z-index: -1;
       overflow: hidden;
+      pointer-events: none;
     }
 
     .bg-animated::before {
       content: '';
       position: absolute;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
-      top: -200px;
-      left: -200px;
-      animation: float-1 20s ease-in-out infinite;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+      top: -300px;
+      left: -300px;
+      animation: float-1 25s ease-in-out infinite;
+      filter: blur(60px);
     }
 
     .bg-animated::after {
       content: '';
       position: absolute;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, transparent 70%);
+      bottom: -250px;
+      right: -250px;
+      animation: float-2 30s ease-in-out infinite;
+      filter: blur(60px);
+    }
+
+    .bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.15;
+      animation-duration: 20s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    .bg-orb-1 {
+      width: 600px;
+      height: 600px;
+      background: var(--accent-cyan);
+      top: 20%;
+      right: 10%;
+      animation-name: float-orb-1;
+    }
+
+    .bg-orb-2 {
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
-      bottom: -150px;
-      right: -150px;
-      animation: float-2 25s ease-in-out infinite;
+      background: var(--purple);
+      bottom: 10%;
+      left: 15%;
+      animation-name: float-orb-2;
+    }
+
+    .bg-orb-3 {
+      width: 400px;
+      height: 400px;
+      background: var(--success-green);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation-name: float-orb-3;
     }
 
     @keyframes float-1 {
-      0%, 100% { transform: translate(0, 0) rotate(0deg); }
-      33% { transform: translate(150px, -150px) rotate(120deg); }
-      66% { transform: translate(-100px, 150px) rotate(240deg); }
+      0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+      25% { transform: translate(200px, -200px) rotate(90deg) scale(1.1); }
+      50% { transform: translate(100px, 100px) rotate(180deg) scale(0.9); }
+      75% { transform: translate(-150px, 180px) rotate(270deg) scale(1.05); }
     }
 
     @keyframes float-2 {
-      0%, 100% { transform: translate(0, 0) rotate(0deg); }
-      50% { transform: translate(-100px, -100px) rotate(180deg); }
+      0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+      33% { transform: translate(-150px, -180px) rotate(120deg) scale(1.15); }
+      66% { transform: translate(120px, 150px) rotate(240deg) scale(0.85); }
     }
 
-    /* Top Bar */
+    @keyframes float-orb-1 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(100px, -100px); }
+    }
+
+    @keyframes float-orb-2 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-80px, 80px); }
+    }
+
+    @keyframes float-orb-3 {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.2); }
+    }
+
+    /* ======================================
+       TOP BAR - ENHANCED
+       ====================================== */
     .top-bar {
-      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-indigo) 100%);
+      background: var(--gradient-primary);
       color: white;
-      padding: 12px 0;
+      padding: 14px 0;
       font-size: 14px;
       position: relative;
       overflow: hidden;
+      z-index: 1001;
     }
 
     .top-bar::before {
@@ -102,99 +275,151 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-      animation: shimmer 3s infinite;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      animation: shimmer 4s infinite;
     }
 
     @keyframes shimmer {
       100% { left: 100%; }
     }
 
-    .top-bar a {
-      color: white;
-      text-decoration: none;
-      transition: all 0.3s;
-      margin-right: 20px;
+    .top-bar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      position: relative;
+      z-index: 2;
     }
 
-    .top-bar a:hover {
+    .top-bar-link {
+      color: white;
+      text-decoration: none;
+      transition: var(--transition-base);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      margin-right: 25px;
+    }
+
+    .top-bar-link:hover {
       color: var(--accent-cyan);
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+    }
+
+    .top-bar-link i {
+      font-size: 16px;
     }
 
     .urgent-badge {
-      background: linear-gradient(135deg, var(--accent-orange) 0%, #F97316 100%);
-      padding: 8px 20px;
-      border-radius: 50px;
+      background: var(--gradient-warning);
+      padding: 10px 24px;
+      border-radius: var(--radius-full);
       font-weight: 700;
       text-transform: uppercase;
       font-size: 11px;
-      letter-spacing: 1px;
-      animation: pulse-glow 2s infinite;
-      box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
+      letter-spacing: 1.5px;
+      animation: pulse-glow 2.5s infinite;
+      box-shadow: 0 6px 25px rgba(245, 158, 11, 0.5);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
     }
 
     @keyframes pulse-glow {
       0%, 100% { 
         transform: scale(1);
-        box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
+        box-shadow: 0 6px 25px rgba(245, 158, 11, 0.5);
       }
       50% { 
-        transform: scale(1.05);
-        box-shadow: 0 6px 30px rgba(245, 158, 11, 0.6);
+        transform: scale(1.08);
+        box-shadow: 0 8px 35px rgba(245, 158, 11, 0.7);
       }
     }
 
-    /* Navigation */
+    /* ======================================
+       NAVIGATION - ENTERPRISE GRADE
+       ====================================== */
     .navbar {
-      background: rgba(255, 255, 255, 0.95) !important;
-      backdrop-filter: blur(20px);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-      padding: 20px 0;
+      background: rgba(255, 255, 255, 0.98) !important;
+      backdrop-filter: blur(25px) saturate(180%);
+      -webkit-backdrop-filter: blur(25px) saturate(180%);
+      box-shadow: var(--shadow-md);
+      padding: 22px 0;
       position: sticky;
       top: 0;
       z-index: 1000;
-      transition: all 0.3s;
+      transition: all var(--transition-base);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     .navbar.scrolled {
-      padding: 12px 0;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      padding: 14px 0;
+      box-shadow: var(--shadow-lg);
+      border-bottom-color: rgba(0, 0, 0, 0.08);
     }
 
     .navbar-brand {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 16px;
+      transition: var(--transition-base);
+    }
+
+    .navbar-brand:hover {
+      transform: translateX(5px);
     }
 
     .brand-icon {
-      width: 55px;
-      height: 55px;
-      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-indigo) 100%);
-      border-radius: 14px;
+      width: 60px;
+      height: 60px;
+      background: var(--gradient-primary);
+      border-radius: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 1.8rem;
-      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
-      transition: all 0.3s;
+      font-size: 2rem;
+      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
+      transition: var(--transition-bounce);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brand-icon::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left var(--transition-slow);
     }
 
     .navbar-brand:hover .brand-icon {
-      transform: rotate(10deg) scale(1.1);
+      transform: rotate(12deg) scale(1.12);
+      box-shadow: 0 15px 40px rgba(37, 99, 235, 0.5);
+    }
+
+    .navbar-brand:hover .brand-icon::before {
+      left: 100%;
     }
 
     .brand-text h1 {
       font-family: 'Sora', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-indigo) 100%);
+      font-size: 1.6rem;
+      font-weight: 900;
+      background: var(--gradient-primary);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
       margin: 0;
-      line-height: 1;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
     }
 
     .brand-text p {
@@ -202,50 +427,61 @@
       color: var(--gray);
       margin: 0;
       font-weight: 600;
+      letter-spacing: 0.5px;
     }
 
     .nav-link {
       color: var(--dark) !important;
       font-weight: 600;
-      padding: 10px 20px !important;
-      border-radius: 10px;
-      transition: all 0.3s;
+      padding: 12px 22px !important;
+      border-radius: var(--radius-md);
+      transition: all var(--transition-base);
       position: relative;
+      font-size: 0.95rem;
     }
 
     .nav-link::before {
       content: '';
       position: absolute;
-      bottom: 5px;
+      bottom: 8px;
       left: 50%;
       width: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--primary-blue), var(--accent-cyan));
-      transition: all 0.3s;
+      background: var(--gradient-primary);
+      transition: all var(--transition-base);
       transform: translateX(-50%);
       border-radius: 2px;
     }
 
     .nav-link:hover {
       color: var(--primary-blue) !important;
-      background: rgba(37, 99, 235, 0.05);
+      background: rgba(37, 99, 235, 0.06);
     }
 
     .nav-link:hover::before {
       width: 60%;
     }
 
+    .nav-link.active {
+      color: var(--primary-blue) !important;
+      background: rgba(37, 99, 235, 0.1);
+    }
+
     .cta-btn {
-      background: linear-gradient(135deg, var(--accent-orange) 0%, #F97316 100%);
+      background: var(--gradient-warning);
       color: white !important;
-      padding: 12px 30px !important;
-      border-radius: 50px;
+      padding: 14px 32px !important;
+      border-radius: var(--radius-full);
       font-weight: 700;
-      box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
-      transition: all 0.3s;
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.35);
+      transition: all var(--transition-base);
       border: none;
       position: relative;
       overflow: hidden;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
     }
 
     .cta-btn::before {
@@ -255,29 +491,75 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-      transition: left 0.5s;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+      transition: left 0.6s;
     }
 
     .cta-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 35px rgba(245, 158, 11, 0.5);
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(245, 158, 11, 0.55);
+      color: white !important;
     }
 
     .cta-btn:hover::before {
       left: 100%;
     }
 
-    /* Hero Section */
+    /* Mobile Menu Toggle */
+    .navbar-toggler {
+      border: none;
+      padding: 8px;
+      position: relative;
+      width: 40px;
+      height: 40px;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: none;
+      outline: none;
+    }
+
+    .navbar-toggler-icon {
+      width: 24px;
+      height: 2px;
+      background: var(--dark);
+      display: block;
+      position: relative;
+      transition: var(--transition-base);
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: var(--dark);
+      left: 0;
+      transition: var(--transition-base);
+    }
+
+    .navbar-toggler-icon::before {
+      top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+      bottom: -8px;
+    }
+
+    /* ======================================
+       HERO SECTION - PREMIUM
+       ====================================== */
     .hero {
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.97) 0%, rgba(30, 41, 59, 0.95) 100%),
-                  url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3') center/cover;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.96) 100%),
+                  url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover;
       min-height: 100vh;
       display: flex;
       align-items: center;
       position: relative;
       overflow: hidden;
       color: white;
+      padding: 100px 0 150px;
     }
 
     .hero::before {
@@ -288,126 +570,156 @@
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 50%);
-      animation: gradient-shift 8s ease-in-out infinite;
+        radial-gradient(circle at 25% 40%, rgba(37, 99, 235, 0.18) 0%, transparent 55%),
+        radial-gradient(circle at 75% 70%, rgba(6, 182, 212, 0.18) 0%, transparent 55%),
+        radial-gradient(circle at 50% 90%, rgba(139, 92, 246, 0.15) 0%, transparent 60%);
+      animation: gradient-shift 10s ease-in-out infinite;
     }
 
     @keyframes gradient-shift {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.05); }
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
-      animation: fadeInUp 1s ease-out;
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(50px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     .hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      background: rgba(6, 182, 212, 0.15);
+      gap: 12px;
+      background: rgba(6, 182, 212, 0.18);
       border: 2px solid var(--accent-cyan);
-      padding: 10px 24px;
-      border-radius: 50px;
+      padding: 12px 28px;
+      border-radius: var(--radius-full);
       font-weight: 700;
       font-size: 0.9rem;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       color: var(--accent-cyan);
-      margin-bottom: 30px;
-      backdrop-filter: blur(10px);
-      animation: fadeInUp 1s ease-out 0.2s both;
+      margin-bottom: 35px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 25px rgba(6, 182, 212, 0.3);
+    }
+
+    .hero-badge i {
+      font-size: 1.2rem;
+      animation: fire-flicker 1.5s ease-in-out infinite;
+    }
+
+    @keyframes fire-flicker {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.1); }
     }
 
     .hero h1 {
       font-family: 'Sora', sans-serif;
-      font-size: clamp(3rem, 6vw, 5rem);
+      font-size: clamp(3.5rem, 7vw, 6rem);
       font-weight: 900;
-      line-height: 1.1;
-      margin-bottom: 30px;
+      line-height: 1.05;
+      margin-bottom: 35px;
       background: linear-gradient(135deg, #FFFFFF 0%, var(--accent-cyan) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: fadeInUp 1s ease-out 0.3s both;
+      background-clip: text;
+      letter-spacing: -2px;
     }
 
     .hero-subtitle {
-      font-size: 1.3rem;
-      line-height: 1.8;
-      opacity: 0.9;
-      margin-bottom: 40px;
-      max-width: 650px;
-      animation: fadeInUp 1s ease-out 0.4s both;
+      font-size: 1.35rem;
+      line-height: 1.9;
+      opacity: 0.95;
+      margin-bottom: 45px;
+      max-width: 700px;
+      font-weight: 400;
     }
 
     .hero-buttons {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
-      animation: fadeInUp 1s ease-out 0.5s both;
     }
 
     .btn-hero {
-      padding: 18px 40px;
-      font-size: 1.1rem;
+      padding: 20px 45px;
+      font-size: 1.15rem;
       font-weight: 700;
-      border-radius: 50px;
-      transition: all 0.3s;
+      border-radius: var(--radius-full);
+      transition: all var(--transition-base);
       display: inline-flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       border: none;
       text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-hero i {
+      font-size: 1.25rem;
     }
 
     .btn-hero-primary {
-      background: linear-gradient(135deg, var(--accent-orange) 0%, #F97316 100%);
+      background: var(--gradient-warning);
       color: white;
-      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+      box-shadow: 0 12px 35px rgba(245, 158, 11, 0.45);
     }
 
     .btn-hero-primary:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(245, 158, 11, 0.6);
+      transform: translateY(-6px);
+      box-shadow: 0 18px 50px rgba(245, 158, 11, 0.65);
       color: white;
     }
 
     .btn-hero-secondary {
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(15px);
       color: white;
-      border: 2px solid rgba(255, 255, 255, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.35);
     }
 
     .btn-hero-secondary:hover {
-      background: rgba(255, 255, 255, 0.25);
-      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.22);
+      transform: translateY(-6px);
+      border-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
       color: white;
     }
 
-    /* Stats Bar */
+    .btn-hero-whatsapp {
+      background: var(--success-green);
+      color: white;
+      border: 2px solid var(--success-green);
+    }
+
+    .btn-hero-whatsapp:hover {
+      background: var(--success-emerald);
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(16, 185, 129, 0.5);
+      color: white;
+    }
+
+    /* ======================================
+       STATS BAR - ELEVATED
+       ====================================== */
     .stats-bar {
       background: white;
-      margin-top: -100px;
+      margin-top: -120px;
       position: relative;
       z-index: 10;
-      border-radius: 30px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-      padding: 50px 40px;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-xl);
+      padding: 60px 50px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     .stat-item {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       position: relative;
+      transition: var(--transition-base);
     }
 
     .stat-item::after {
@@ -416,100 +728,140 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      width: 1px;
-      height: 60px;
+      width: 2px;
+      height: 70px;
       background: linear-gradient(to bottom, transparent, var(--primary-blue), transparent);
+      opacity: 0.3;
     }
 
     .stat-item:last-child::after {
       display: none;
     }
 
+    .stat-item:hover {
+      transform: translateY(-8px);
+    }
+
     .stat-icon {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 20px;
-      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-indigo) 100%);
-      border-radius: 20px;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 25px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-lg);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2rem;
+      font-size: 2.2rem;
       color: white;
-      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
-      transition: all 0.3s;
+      box-shadow: 0 12px 35px rgba(37, 99, 235, 0.35);
+      transition: all var(--transition-bounce);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-icon::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+      opacity: 0;
+      transition: var(--transition-base);
     }
 
     .stat-item:hover .stat-icon {
-      transform: translateY(-10px) rotate(5deg);
-      box-shadow: 0 15px 40px rgba(37, 99, 235, 0.5);
+      transform: translateY(-12px) rotate(8deg) scale(1.1);
+      box-shadow: 0 18px 50px rgba(37, 99, 235, 0.55);
+    }
+
+    .stat-item:hover .stat-icon::before {
+      opacity: 1;
+      animation: shine-rotate 1.5s linear infinite;
+    }
+
+    @keyframes shine-rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
 
     .stat-number {
       font-family: 'Sora', sans-serif;
-      font-size: 2.5rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-cyan) 100%);
+      font-size: 3rem;
+      font-weight: 900;
+      background: var(--gradient-primary);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 10px;
+      background-clip: text;
+      margin-bottom: 12px;
+      line-height: 1;
     }
 
     .stat-label {
       color: var(--gray);
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 1.05rem;
+      letter-spacing: 0.3px;
     }
 
-    /* Section */
+    /* ======================================
+       SECTION STYLING - PROFESSIONAL
+       ====================================== */
     .section {
-      padding: 100px 0;
+      padding: 120px 0;
       position: relative;
     }
 
     .section-header {
       text-align: center;
-      max-width: 800px;
-      margin: 0 auto 80px;
+      max-width: 850px;
+      margin: 0 auto 90px;
     }
 
     .section-badge {
       display: inline-block;
-      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.12) 0%, rgba(6, 182, 212, 0.12) 100%);
       color: var(--primary-blue);
-      padding: 10px 25px;
-      border-radius: 50px;
+      padding: 12px 30px;
+      border-radius: var(--radius-full);
       font-weight: 700;
       font-size: 0.85rem;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 20px;
+      letter-spacing: 2.5px;
+      margin-bottom: 25px;
+      border: 2px solid rgba(37, 99, 235, 0.2);
     }
 
     .section-title {
       font-family: 'Sora', sans-serif;
-      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-size: clamp(2.8rem, 5.5vw, 4rem);
       font-weight: 900;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
       background: linear-gradient(135deg, var(--dark) 0%, var(--primary-blue) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      line-height: 1.2;
+      background-clip: text;
+      line-height: 1.15;
+      letter-spacing: -1.5px;
     }
 
     .section-subtitle {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       color: var(--gray);
-      line-height: 1.8;
+      line-height: 1.85;
+      font-weight: 400;
     }
 
-    /* Job Cards */
+    /* ======================================
+       JOB CARDS - ENTERPRISE DESIGN
+       ====================================== */
     .job-card {
       background: white;
-      border-radius: 25px;
-      padding: 40px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      border-radius: var(--radius-xl);
+      padding: 45px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
       height: 100%;
       border: 2px solid transparent;
       position: relative;
@@ -522,120 +874,228 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 5px;
-      background: linear-gradient(90deg, var(--primary-blue) 0%, var(--accent-cyan) 100%);
+      height: 6px;
+      background: var(--gradient-primary);
       transform: scaleX(0);
-      transition: transform 0.3s;
+      transform-origin: left;
+      transition: transform 0.4s;
+    }
+
+    .job-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%);
+      opacity: 0;
+      transition: opacity var(--transition-base);
+      z-index: 0;
     }
 
     .job-card:hover {
-      transform: translateY(-15px);
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
-      border-color: rgba(37, 99, 235, 0.2);
+      transform: translateY(-18px);
+      box-shadow: var(--shadow-2xl);
+      border-color: rgba(37, 99, 235, 0.25);
     }
 
     .job-card:hover::before {
       transform: scaleX(1);
     }
 
+    .job-card:hover::after {
+      opacity: 1;
+    }
+
+    .job-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
     .job-badge {
       display: inline-block;
-      background: linear-gradient(135deg, var(--accent-orange) 0%, #F97316 100%);
+      background: var(--gradient-warning);
       color: white;
-      padding: 8px 20px;
-      border-radius: 50px;
-      font-size: 0.85rem;
+      padding: 10px 24px;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
       font-weight: 700;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+      margin-bottom: 25px;
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .job-badge.badge-urgent {
+      background: var(--gradient-warning);
+      animation: badge-pulse 2s infinite;
+    }
+
+    .job-badge.badge-demand {
+      background: var(--gradient-success);
+    }
+
+    .job-badge.badge-hot {
+      background: var(--gradient-purple);
+    }
+
+    .job-badge.badge-top {
+      background: var(--gradient-cosmic);
+    }
+
+    @keyframes badge-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
 
     .job-title {
       font-family: 'Sora', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 20px;
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 25px;
       color: var(--dark);
+      line-height: 1.3;
     }
 
     .job-details {
       list-style: none;
       padding: 0;
-      margin: 0 0 30px;
+      margin: 0 0 35px;
     }
 
     .job-details li {
-      padding: 12px 0;
+      padding: 14px 0;
       display: flex;
       align-items: center;
-      gap: 12px;
-      color: var(--gray);
+      gap: 14px;
+      color: var(--gray-dark);
       font-weight: 500;
+      border-bottom: 1px solid var(--light);
+      transition: var(--transition-base);
+    }
+
+    .job-details li:last-child {
+      border-bottom: none;
+    }
+
+    .job-details li:hover {
+      padding-left: 8px;
+      color: var(--primary-blue);
     }
 
     .job-details i {
       color: var(--primary-blue);
-      font-size: 1.1rem;
-      width: 20px;
+      font-size: 1.2rem;
+      width: 24px;
+      text-align: center;
+      flex-shrink: 0;
     }
 
     .salary-highlight {
-      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(16, 185, 129, 0.06) 100%);
       border: 2px solid var(--success-green);
-      border-radius: 15px;
-      padding: 20px;
-      margin-bottom: 25px;
+      border-radius: var(--radius-lg);
+      padding: 25px;
+      margin-bottom: 30px;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .salary-highlight::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+      animation: salary-glow 3s ease-in-out infinite;
+    }
+
+    @keyframes salary-glow {
+      0%, 100% { transform: translate(0, 0); opacity: 0.5; }
+      50% { transform: translate(10%, 10%); opacity: 0.8; }
     }
 
     .salary-highlight .amount {
       font-family: 'Sora', sans-serif;
-      font-size: 2rem;
-      font-weight: 800;
+      font-size: 2.25rem;
+      font-weight: 900;
       color: var(--success-green);
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
     }
 
     .salary-highlight .label {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--gray);
       font-weight: 600;
+      position: relative;
+      z-index: 1;
     }
 
     .btn-apply {
       width: 100%;
-      padding: 15px;
-      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-indigo) 100%);
+      padding: 18px;
+      background: var(--gradient-primary);
       color: white;
       border: none;
-      border-radius: 15px;
+      border-radius: var(--radius-lg);
       font-weight: 700;
-      font-size: 1rem;
-      transition: all 0.3s;
+      font-size: 1.05rem;
+      transition: all var(--transition-base);
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       text-decoration: none;
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-apply::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.6s;
     }
 
     .btn-apply:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(37, 99, 235, 0.5);
       color: white;
     }
 
-    /* Services */
+    .btn-apply:hover::before {
+      left: 100%;
+    }
+
+    .btn-apply i {
+      font-size: 1.2rem;
+    }
+
+    /* ======================================
+       SERVICE CARDS - PREMIUM STYLING
+       ====================================== */
     .service-card {
       background: white;
-      padding: 50px 40px;
-      border-radius: 25px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
-      transition: all 0.4s;
+      padding: 55px 45px;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       height: 100%;
       position: relative;
       overflow: hidden;
+      border: 2px solid transparent;
     }
 
     .service-card::before {
@@ -643,54 +1103,124 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 5px;
+      width: 6px;
       height: 100%;
-      background: linear-gradient(180deg, var(--primary-blue) 0%, var(--accent-cyan) 100%);
+      background: var(--gradient-primary);
       transform: scaleY(0);
-      transition: transform 0.3s;
+      transform-origin: top;
+      transition: transform 0.4s;
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.02) 0%, rgba(6, 182, 212, 0.02) 100%);
+      opacity: 0;
+      transition: opacity var(--transition-base);
     }
 
     .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+      transform: translateY(-12px);
+      box-shadow: var(--shadow-xl);
+      border-color: rgba(37, 99, 235, 0.15);
     }
 
     .service-card:hover::before {
       transform: scaleY(1);
     }
 
+    .service-card:hover::after {
+      opacity: 1;
+    }
+
+    .service-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
     .service-icon {
-      width: 90px;
-      height: 90px;
-      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-cyan) 100%);
-      border-radius: 22px;
+      width: 100px;
+      height: 100px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-xl);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       color: white;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
-      transition: all 0.3s;
+      margin-bottom: 35px;
+      box-shadow: 0 12px 35px rgba(37, 99, 235, 0.35);
+      transition: all var(--transition-bounce);
+    }
+
+    .service-card:nth-child(2) .service-icon {
+      background: var(--gradient-success);
+      box-shadow: 0 12px 35px rgba(16, 185, 129, 0.35);
+    }
+
+    .service-card:nth-child(3) .service-icon {
+      background: var(--gradient-purple);
+      box-shadow: 0 12px 35px rgba(139, 92, 246, 0.35);
     }
 
     .service-card:hover .service-icon {
-      transform: rotateY(180deg);
+      transform: rotateY(180deg) scale(1.1);
     }
 
     .service-card h3 {
       font-family: 'Sora', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 20px;
+      font-size: 1.65rem;
+      font-weight: 800;
+      margin-bottom: 22px;
       color: var(--dark);
     }
 
-    /* Contact CTA */
+    .service-card p {
+      color: var(--gray);
+      line-height: 1.85;
+      margin-bottom: 28px;
+      font-size: 1.05rem;
+    }
+
+    .service-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .service-features li {
+      padding: 12px 0;
+      color: var(--gray-dark);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      transition: var(--transition-base);
+    }
+
+    .service-features li:hover {
+      padding-left: 8px;
+      color: var(--primary-blue);
+    }
+
+    .service-features i {
+      color: var(--success-green);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* ======================================
+       CTA SECTION - IMMERSIVE
+       ====================================== */
     .cta-section {
-      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-indigo) 100%);
+      background: var(--gradient-primary);
       position: relative;
       overflow: hidden;
+      padding: 100px 0;
     }
 
     .cta-section::before {
@@ -701,8 +1231,14 @@
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 25% 30%, rgba(255, 255, 255, 0.12) 0%, transparent 55%),
+        radial-gradient(circle at 75% 70%, rgba(255, 255, 255, 0.12) 0%, transparent 55%);
+      animation: cta-float 8s ease-in-out infinite;
+    }
+
+    @keyframes cta-float {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
     }
 
     .cta-content {
@@ -714,113 +1250,550 @@
 
     .cta-content h2 {
       font-family: 'Sora', sans-serif;
-      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-size: clamp(3rem, 6vw, 4.5rem);
       font-weight: 900;
-      margin-bottom: 25px;
+      margin-bottom: 28px;
+      line-height: 1.1;
+      letter-spacing: -1px;
     }
 
     .cta-content p {
-      font-size: 1.3rem;
-      opacity: 0.95;
-      margin-bottom: 50px;
-      max-width: 700px;
+      font-size: 1.35rem;
+      opacity: 0.96;
+      margin-bottom: 55px;
+      max-width: 750px;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.8;
     }
 
     .contact-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-bottom: 50px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+      margin-bottom: 55px;
     }
 
     .contact-card {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(20px);
-      padding: 40px 30px;
-      border-radius: 20px;
-      border: 2px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      padding: 45px 35px;
+      border-radius: var(--radius-xl);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      transition: all var(--transition-base);
       text-align: center;
     }
 
     .contact-card:hover {
-      background: rgba(255, 255, 255, 0.15);
-      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-12px);
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     }
 
     .contact-card i {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-size: 3rem;
+      margin-bottom: 22px;
+      display: block;
     }
 
-    /* Floating Button */
+    .contact-card strong {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .contact-card span {
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    /* ======================================
+       FLOATING ACTION BUTTON
+       ====================================== */
     .floating-btn {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 70px;
-      height: 70px;
-      background: linear-gradient(135deg, var(--accent-orange) 0%, #F97316 100%);
+      bottom: 35px;
+      right: 35px;
+      width: 75px;
+      height: 75px;
+      background: var(--gradient-warning);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 1.8rem;
-      box-shadow: 0 10px 40px rgba(245, 158, 11, 0.5);
+      font-size: 2rem;
+      box-shadow: 0 12px 45px rgba(245, 158, 11, 0.55);
       z-index: 9999;
-      animation: pulse-glow 2s infinite;
+      animation: float-btn 3s ease-in-out infinite;
       text-decoration: none;
-      transition: all 0.3s;
+      transition: all var(--transition-base);
     }
 
     .floating-btn:hover {
-      transform: scale(1.15);
-      box-shadow: 0 15px 50px rgba(245, 158, 11, 0.7);
+      transform: scale(1.2);
+      box-shadow: 0 18px 60px rgba(245, 158, 11, 0.75);
       color: white;
     }
 
-    /* Reveal Animation */
-    .reveal {
-      opacity: 0;
+    @keyframes float-btn {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    /* WhatsApp Floating Button */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 125px;
+      right: 35px;
+      width: 70px;
+      height: 70px;
+      background: var(--success-green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      box-shadow: 0 10px 40px rgba(16, 185, 129, 0.5);
+      z-index: 9998;
+      text-decoration: none;
+      transition: all var(--transition-base);
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.15);
+      box-shadow: 0 15px 50px rgba(16, 185, 129, 0.7);
+      color: white;
+    }
+
+    /* ======================================
+       TESTIMONIALS SECTION
+       ====================================== */
+    .testimonial-card {
+      background: white;
+      padding: 40px;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      transition: all var(--transition-base);
+      height: 100%;
+      border: 2px solid transparent;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-xl);
+      border-color: rgba(37, 99, 235, 0.15);
+    }
+
+    .testimonial-stars {
+      color: var(--accent-orange);
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-text {
+      color: var(--gray-dark);
+      line-height: 1.8;
+      margin-bottom: 25px;
+      font-style: italic;
+      font-size: 1.05rem;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .author-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--gradient-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .author-info h5 {
+      margin: 0;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .author-info p {
+      margin: 0;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    /* ======================================
+       FOOTER - COMPREHENSIVE
+       ====================================== */
+    .footer {
+      background: var(--dark);
+      color: white;
+      padding: 80px 0 0;
+      position: relative;
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+    }
+
+    .footer-section {
+      margin-bottom: 40px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .footer-logo .brand-icon {
+      width: 55px;
+      height: 55px;
+      font-size: 1.8rem;
+    }
+
+    .footer-logo h3 {
+      font-family: 'Sora', sans-serif;
+      font-weight: 900;
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .footer-section h4 {
+      font-family: 'Sora', sans-serif;
+      font-weight: 700;
+      margin-bottom: 25px;
+      font-size: 1.2rem;
+      color: var(--accent-cyan);
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 15px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: var(--transition-base);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-cyan);
+      padding-left: 8px;
+    }
+
+    .footer-links i {
+      width: 20px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .social-link {
+      width: 45px;
+      height: 45px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: all var(--transition-base);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .social-link:hover {
+      background: var(--accent-cyan);
+      border-color: var(--accent-cyan);
+      transform: translateY(-5px);
+      color: white;
+    }
+
+    .footer-bottom {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 25px 0;
+      margin-top: 60px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* ======================================
+       ANIMATIONS & TRANSITIONS
+       ====================================== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(60px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-60px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(60px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* AOS Animation Overrides */
+    [data-aos="fade-up"] {
       transform: translateY(50px);
-      transition: all 0.8s ease-out;
     }
 
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
+    [data-aos="fade-left"] {
+      transform: translateX(50px);
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2.5rem; }
-      .hero-subtitle { font-size: 1.1rem; }
-      .section-title { font-size: 2rem; }
-      .stats-bar { margin-top: -60px; padding: 30px 20px; }
+    [data-aos="fade-right"] {
+      transform: translateX(-50px);
+    }
+
+    /* ======================================
+       RESPONSIVE DESIGN
+       ====================================== */
+    @media (max-width: 1200px) {
+      .hero h1 { font-size: 4.5rem; }
+      .section-title { font-size: 3.2rem; }
+    }
+
+    @media (max-width: 992px) {
+      .hero { padding: 80px 0 120px; }
+      .hero h1 { font-size: 3.5rem; }
+      .hero-subtitle { font-size: 1.2rem; }
+      .section { padding: 90px 0; }
+      .section-title { font-size: 2.8rem; }
+      .stats-bar { margin-top: -80px; padding: 45px 35px; }
       .stat-item::after { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar-content { justify-content: center; text-align: center; }
+      .top-bar-link { margin: 0 10px; }
+      
+      .hero { padding: 60px 0 100px; min-height: auto; }
+      .hero h1 { font-size: 2.8rem; }
+      .hero-subtitle { font-size: 1.1rem; }
       .hero-buttons { flex-direction: column; width: 100%; }
       .btn-hero { width: 100%; justify-content: center; }
+      
+      .section { padding: 70px 0; }
+      .section-header { margin-bottom: 60px; }
+      .section-title { font-size: 2.2rem; }
+      .section-subtitle { font-size: 1.1rem; }
+      
+      .stats-bar { margin-top: -60px; padding: 35px 25px; }
+      .stat-icon { width: 70px; height: 70px; font-size: 1.8rem; }
+      .stat-number { font-size: 2.2rem; }
+      
+      .job-card, .service-card { padding: 35px 28px; }
+      .job-title { font-size: 1.5rem; }
+      .service-icon { width: 80px; height: 80px; font-size: 2.2rem; }
+      
+      .floating-btn { width: 60px; height: 60px; font-size: 1.6rem; bottom: 25px; right: 25px; }
+      .floating-whatsapp { width: 55px; height: 55px; font-size: 1.6rem; bottom: 95px; right: 25px; }
+      
+      .contact-grid { grid-template-columns: 1fr; gap: 25px; }
+    }
+
+    @media (max-width: 576px) {
+      html { font-size: 14px; }
+      
+      .brand-text h1 { font-size: 1.3rem; }
+      .brand-text p { font-size: 0.7rem; }
+      .brand-icon { width: 50px; height: 50px; font-size: 1.6rem; }
+      
+      .nav-link { padding: 10px 16px !important; }
+      .cta-btn { padding: 12px 24px !important; }
+      
+      .hero h1 { font-size: 2.2rem; }
+      .hero-subtitle { font-size: 1rem; }
+      .btn-hero { padding: 16px 32px; font-size: 1rem; }
+      
+      .section-badge { padding: 10px 20px; font-size: 0.75rem; }
+      .stats-bar { padding: 30px 20px; border-radius: var(--radius-lg); }
+      .job-card, .service-card { padding: 30px 22px; }
+    }
+
+    /* ======================================
+       UTILITY CLASSES
+       ====================================== */
+    .text-gradient-primary {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .text-gradient-success {
+      background: var(--gradient-success);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .text-gradient-warning {
+      background: var(--gradient-warning);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .text-primary-blue { color: var(--primary-blue); }
+    .text-success-green { color: var(--success-green); }
+    .text-accent-orange { color: var(--accent-orange); }
+    .text-gray { color: var(--gray); }
+    .text-dark { color: var(--dark); }
+
+    .bg-light-section { background: var(--light); }
+    .bg-white-section { background: white; }
+    .bg-dark-section { background: var(--dark); color: white; }
+
+    /* Loading State */
+    .loading {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    /* Print Styles */
+    @media print {
+      .navbar, .floating-btn, .floating-whatsapp, .top-bar {
+        display: none !important;
+      }
+    }
+
+    /* Accessibility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    /* Focus Visible */
+    *:focus-visible {
+      outline: 3px solid var(--primary-blue);
+      outline-offset: 2px;
+    }
+
+    /* Selection */
+    ::selection {
+      background: var(--primary-blue);
+      color: white;
+    }
+
+    ::-moz-selection {
+      background: var(--primary-blue);
+      color: white;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--light);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--gradient-primary);
+      border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--primary-indigo);
     }
   </style>
 </head>
 <body>
-  <div class="bg-animated"></div>
+  <!-- Animated Background -->
+  <div class="bg-animated">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
 
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center flex-wrap">
+      <div class="top-bar-content">
         <div>
-          <a href="tel:9571016093"><i class="fas fa-phone me-2"></i>9571016093</a>
-          <a href="mailto:shivshakti@example.com"><i class="fas fa-envelope me-2"></i>shivshakti@example.com</a>
+          <a href="tel:9571016093" class="top-bar-link">
+            <i class="fas fa-phone-alt"></i>
+            <span>9571016093</span>
+          </a>
+          <a href="mailto:contact@shivshaktienterprises.com" class="top-bar-link">
+            <i class="fas fa-envelope"></i>
+            <span>contact@shivshaktienterprises.com</span>
+          </a>
         </div>
         <div>
-          <span style="margin-right: 15px;"><i class="fas fa-map-marker-alt me-2"></i>Hero Chowk, Neemrana - 301705</span>
+          <span class="top-bar-link">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hero Chowk, Neemrana - 301705, Rajasthan</span>
+          </span>
           <a href="tel:9571016093" class="urgent-badge">
-            <i class="fas fa-phone-volume me-1"></i>URGENT HIRING
+            <i class="fas fa-phone-volume"></i>
+            <span>URGENT HIRING NOW</span>
           </a>
         </div>
       </div>
@@ -828,32 +1801,34 @@
   </div>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#home">
         <div class="brand-icon">
           <i class="fas fa-briefcase"></i>
         </div>
         <div class="brand-text">
           <h1>SHIV SHAKTI ENTERPRISES</h1>
-          <p>Job Placement & Manpower Solutions</p>
+          <p>Premium Job Placement & Manpower Solutions</p>
         </div>
       </a>
       
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto me-4">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#jobs">Current Jobs</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
         <a href="tel:9571016093" class="cta-btn">
-          <i class="fas fa-phone me-2"></i>Call: 9571016093
+          <i class="fas fa-phone-volume"></i>
+          <span>Call: 9571016093</span>
         </a>
       </div>
     </div>
@@ -863,24 +1838,23 @@
   <section class="hero" id="home">
     <div class="container">
       <div class="row">
-        <div class="col-lg-9">
-          <div class="hero-content">
-            <div class="hero-badge">
+        <div class="col-lg-10 col-xl-9">
+          <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
               <i class="fas fa-fire"></i>
-              <span>Urgent Hiring in Neemrana</span>
+              <span>Urgent Hiring - Multiple Positions Available</span>
             </div>
             
-            <h1 class="font-display">
-              Your Dream Job<br>
-              Awaits in Neemrana
+            <h1 class="font-display" data-aos="fade-up" data-aos-delay="200">
+              Transform Your Career<br>
+              Start Today in Neemrana
             </h1>
             
-            <p class="hero-subtitle">
-              Leading manpower solutions provider in Neemrana, Rajasthan. Connecting skilled workers with top companies. 
-              Multiple job openings available with competitive salaries from ₹16,000 to ₹25,000 per month.
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+              Premier manpower solutions and job placement services in Neemrana, Rajasthan. Connecting talented individuals with leading manufacturing companies. Multiple opportunities with competitive salaries ranging from ₹16,000 to ₹25,000 per month.
             </p>
             
-            <div class="hero-buttons">
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
               <a href="tel:9571016093" class="btn-hero btn-hero-primary">
                 <i class="fas fa-phone-volume"></i>
                 <span>Call Now: 9571016093</span>
@@ -889,7 +1863,7 @@
                 <i class="fas fa-briefcase"></i>
                 <span>View Job Openings</span>
               </a>
-              <a href="https://wa.me/919571016093" class="btn-hero btn-hero-secondary">
+              <a href="https://wa.me/919571016093?text=Hi%2C%20I%27m%20interested%20in%20job%20opportunities" class="btn-hero btn-hero-whatsapp">
                 <i class="fab fa-whatsapp"></i>
                 <span>WhatsApp Us</span>
               </a>
@@ -902,34 +1876,34 @@
 
   <!-- Stats Bar -->
   <div class="container">
-    <div class="stats-bar">
+    <div class="stats-bar" data-aos="fade-up" data-aos-duration="800">
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="stat-item">
+          <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
             <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
-            <div class="stat-number">500+</div>
-            <div class="stat-label">Jobs Placed</div>
+            <div class="stat-number" data-count="500">0+</div>
+            <div class="stat-label">Successful Placements</div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="stat-item">
+          <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
             <div class="stat-icon"><i class="fas fa-building"></i></div>
-            <div class="stat-number">50+</div>
+            <div class="stat-number" data-count="50">0+</div>
             <div class="stat-label">Partner Companies</div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="stat-item">
+          <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
             <div class="stat-icon"><i class="fas fa-users"></i></div>
-            <div class="stat-number">1000+</div>
+            <div class="stat-number" data-count="1000">0+</div>
             <div class="stat-label">Happy Candidates</div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
-          <div class="stat-item">
-            <div class="stat-icon"><i class="fas fa-clock"></i></div>
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">Support Available</div>
+          <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+            <div class="stat-icon"><i class="fas fa-star"></i></div>
+            <div class="stat-number">4.9/5</div>
+            <div class="stat-label">Client Rating</div>
           </div>
         </div>
       </div>
@@ -939,19 +1913,21 @@
   <!-- Current Job Openings -->
   <section class="section" id="jobs">
     <div class="container">
-      <div class="section-header reveal">
-        <div class="section-badge">CURRENT OPENINGS</div>
-        <h2 class="section-title font-display">Urgent Job Requirements in Neemrana</h2>
-        <p class="section-subtitle">
-          Immediate hiring for multiple positions in leading manufacturing companies. 
-          Apply now and start your career with attractive salary packages.
+      <div class="section-header">
+        <div class="section-badge" data-aos="fade-up">CURRENT OPENINGS</div>
+        <h2 class="section-title font-display" data-aos="fade-up" data-aos-delay="100">
+          Urgent Job Requirements in Neemrana
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+          Immediate hiring for multiple positions in leading manufacturing companies. Apply now and start your career with attractive salary packages and growth opportunities.
         </p>
       </div>
 
       <div class="row">
+        <!-- Job Card 1 -->
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="job-card reveal">
-            <div class="job-badge">URGENT HIRING</div>
+          <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="job-badge badge-urgent">URGENT HIRING</div>
             <h3 class="job-title font-display">10th Pass Jobs</h3>
             
             <div class="salary-highlight">
@@ -970,15 +1946,19 @@
               </li>
               <li>
                 <i class="fas fa-briefcase"></i>
-                <span>Type: Full Time</span>
+                <span>Type: Full Time Permanent</span>
               </li>
               <li>
                 <i class="fas fa-users"></i>
-                <span>Multiple Positions</span>
+                <span>Multiple Positions Available</span>
               </li>
               <li>
                 <i class="fas fa-clock"></i>
                 <span>Immediate Joining</span>
+              </li>
+              <li>
+                <i class="fas fa-shield-alt"></i>
+                <span>PF, ESI & Medical Benefits</span>
               </li>
             </ul>
 
@@ -989,9 +1969,10 @@
           </div>
         </div>
 
+        <!-- Job Card 2 -->
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="job-card reveal">
-            <div class="job-badge">HIGH DEMAND</div>
+          <div class="job-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="job-badge badge-demand">HIGH DEMAND</div>
             <h3 class="job-title font-display">12th Pass Jobs</h3>
             
             <div class="salary-highlight">
@@ -1010,7 +1991,7 @@
               </li>
               <li>
                 <i class="fas fa-briefcase"></i>
-                <span>Type: Full Time</span>
+                <span>Type: Full Time Permanent</span>
               </li>
               <li>
                 <i class="fas fa-users"></i>
@@ -1019,6 +2000,10 @@
               <li>
                 <i class="fas fa-clock"></i>
                 <span>Join Immediately</span>
+              </li>
+              <li>
+                <i class="fas fa-chart-line"></i>
+                <span>Career Growth Opportunities</span>
               </li>
             </ul>
 
@@ -1029,9 +2014,10 @@
           </div>
         </div>
 
+        <!-- Job Card 3 -->
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="job-card reveal">
-            <div class="job-badge">HOT VACANCY</div>
+          <div class="job-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="job-badge badge-hot">HOT VACANCY</div>
             <h3 class="job-title font-display">ITI Pass Jobs</h3>
             
             <div class="salary-highlight">
@@ -1050,15 +2036,19 @@
               </li>
               <li>
                 <i class="fas fa-briefcase"></i>
-                <span>Type: Full Time</span>
+                <span>Type: Full Time Permanent</span>
               </li>
               <li>
                 <i class="fas fa-cogs"></i>
-                <span>Technical Roles</span>
+                <span>Technical Skilled Roles</span>
               </li>
               <li>
                 <i class="fas fa-clock"></i>
-                <span>Walk-in Interview</span>
+                <span>Walk-in Interview Available</span>
+              </li>
+              <li>
+                <i class="fas fa-certificate"></i>
+                <span>Skill Enhancement Training</span>
               </li>
             </ul>
 
@@ -1069,9 +2059,10 @@
           </div>
         </div>
 
+        <!-- Job Card 4 -->
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="job-card reveal">
-            <div class="job-badge">TOP SALARY</div>
+          <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="job-badge badge-top">TOP SALARY</div>
             <h3 class="job-title font-display">Brazing Operator</h3>
             
             <div class="salary-highlight">
@@ -1090,7 +2081,7 @@
               </li>
               <li>
                 <i class="fas fa-briefcase"></i>
-                <span>Type: Full Time</span>
+                <span>Type: Full Time Permanent</span>
               </li>
               <li>
                 <i class="fas fa-award"></i>
@@ -1099,6 +2090,10 @@
               <li>
                 <i class="fas fa-rupee-sign"></i>
                 <span>High Earning Potential</span>
+              </li>
+              <li>
+                <i class="fas fa-gifts"></i>
+                <span>Performance Bonuses</span>
               </li>
             </ul>
 
@@ -1109,9 +2104,10 @@
           </div>
         </div>
 
+        <!-- Job Card 5 -->
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="job-card reveal">
-            <div class="job-badge">SKILLED JOB</div>
+          <div class="job-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="job-badge badge-urgent">SKILLED JOB</div>
             <h3 class="job-title font-display">Cut-off Machine Operator</h3>
             
             <div class="salary-highlight">
@@ -1122,7 +2118,7 @@
             <ul class="job-details">
               <li>
                 <i class="fas fa-cogs"></i>
-                <span>Skill: Cut-off Machine</span>
+                <span>Skill: Cut-off Machine Operation</span>
               </li>
               <li>
                 <i class="fas fa-map-marker-alt"></i>
@@ -1130,7 +2126,7 @@
               </li>
               <li>
                 <i class="fas fa-briefcase"></i>
-                <span>Type: Full Time</span>
+                <span>Type: Full Time Permanent</span>
               </li>
               <li>
                 <i class="fas fa-industry"></i>
@@ -1138,7 +2134,11 @@
               </li>
               <li>
                 <i class="fas fa-tools"></i>
-                <span>Machine Operation</span>
+                <span>Machine Operation Experience</span>
+              </li>
+              <li>
+                <i class="fas fa-home"></i>
+                <span>Accommodation Assistance</span>
               </li>
             </ul>
 
@@ -1149,9 +2149,10 @@
           </div>
         </div>
 
+        <!-- Job Card 6 -->
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="job-card reveal">
-            <div class="job-badge">IMMEDIATE OPENING</div>
+          <div class="job-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="job-badge badge-demand">IMMEDIATE OPENING</div>
             <h3 class="job-title font-display">Press & Bending Machine</h3>
             
             <div class="salary-highlight">
@@ -1162,7 +2163,7 @@
             <ul class="job-details">
               <li>
                 <i class="fas fa-cogs"></i>
-                <span>Skill: Press/Bending M/C</span>
+                <span>Skill: Press/Bending Machine</span>
               </li>
               <li>
                 <i class="fas fa-map-marker-alt"></i>
@@ -1170,7 +2171,7 @@
               </li>
               <li>
                 <i class="fas fa-briefcase"></i>
-                <span>Type: Full Time</span>
+                <span>Type: Full Time Permanent</span>
               </li>
               <li>
                 <i class="fas fa-hard-hat"></i>
@@ -1179,6 +2180,10 @@
               <li>
                 <i class="fas fa-star"></i>
                 <span>Skill Development Training</span>
+              </li>
+              <li>
+                <i class="fas fa-bus"></i>
+                <span>Transport Facility Available</span>
               </li>
             </ul>
 
@@ -1193,70 +2198,75 @@
   </section>
 
   <!-- Services Section -->
-  <section class="section" style="background: var(--light);" id="services">
+  <section class="section bg-light-section" id="services">
     <div class="container">
-      <div class="section-header reveal">
-        <div class="section-badge">WHAT WE OFFER</div>
-        <h2 class="section-title font-display">Our Manpower Solutions</h2>
-        <p class="section-subtitle">
-          Comprehensive recruitment and placement services connecting job seekers with leading companies in Neemrana industrial area.
+      <div class="section-header">
+        <div class="section-badge" data-aos="fade-up">WHAT WE OFFER</div>
+        <h2 class="section-title font-display" data-aos="fade-up" data-aos-delay="100">
+          Comprehensive Manpower Solutions
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+          End-to-end recruitment and placement services connecting talented job seekers with leading companies in Neemrana industrial area. Your trusted partner for career growth.
         </p>
       </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-card reveal">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
             <div class="service-icon">
               <i class="fas fa-user-tie"></i>
             </div>
-            <h3 class="font-display">Job Placement</h3>
-            <p style="color: var(--gray); line-height: 1.8; margin-bottom: 25px;">
-              We connect skilled and semi-skilled workers with top manufacturing companies in Neemrana. 
-              Quick placement process with immediate joining opportunities.
+            <h3 class="font-display">Job Placement Services</h3>
+            <p>
+              We connect skilled and semi-skilled workers with top manufacturing companies in Neemrana. Quick placement process with immediate joining opportunities and long-term career support.
             </p>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Free Registration</li>
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Quick Process</li>
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Multiple Opportunities</li>
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Career Guidance</li>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Free Registration Process</li>
+              <li><i class="fas fa-check-circle"></i> Quick Placement (24-48 hrs)</li>
+              <li><i class="fas fa-check-circle"></i> Multiple Job Opportunities</li>
+              <li><i class="fas fa-check-circle"></i> Career Guidance & Counseling</li>
+              <li><i class="fas fa-check-circle"></i> Interview Preparation Support</li>
+              <li><i class="fas fa-check-circle"></i> Resume Building Assistance</li>
             </ul>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-card reveal">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
             <div class="service-icon">
               <i class="fas fa-users-cog"></i>
             </div>
             <h3 class="font-display">Manpower Supply</h3>
-            <p style="color: var(--gray); line-height: 1.8; margin-bottom: 25px;">
-              Providing skilled workforce to manufacturing units, factories, and industries. 
-              Reliable manpower solutions for all your business needs.
+            <p>
+              Providing skilled workforce to manufacturing units, factories, and industries across Neemrana. Reliable manpower solutions tailored to meet your specific business requirements.
             </p>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Skilled Workers</li>
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Quality Manpower</li>
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Timely Delivery</li>
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Post-placement Support</li>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Skilled & Semi-Skilled Workers</li>
+              <li><i class="fas fa-check-circle"></i> Quality Pre-Screened Manpower</li>
+              <li><i class="fas fa-check-circle"></i> Timely Delivery Guaranteed</li>
+              <li><i class="fas fa-check-circle"></i> Post-Placement Support</li>
+              <li><i class="fas fa-check-circle"></i> Flexible Engagement Models</li>
+              <li><i class="fas fa-check-circle"></i> 24/7 Client Support</li>
             </ul>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-card reveal">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
             <div class="service-icon">
               <i class="fas fa-handshake"></i>
             </div>
             <h3 class="font-display">Career Counseling</h3>
-            <p style="color: var(--gray); line-height: 1.8; margin-bottom: 25px;">
-              Free career guidance and counseling services. We help you choose the right job 
-              based on your skills and career goals.
+            <p>
+              Free professional career guidance and counseling services. We help you choose the right job based on your skills, experience, and long-term career goals.
             </p>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Expert Guidance</li>
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Skill Assessment</li>
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Job Matching</li>
-              <li style="padding: 10px 0; color: var(--gray);"><i class="fas fa-check-circle" style="color: var(--success-green); margin-right: 10px;"></i>Interview Preparation</li>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Expert Career Guidance</li>
+              <li><i class="fas fa-check-circle"></i> Comprehensive Skill Assessment</li>
+              <li><i class="fas fa-check-circle"></i> Personalized Job Matching</li>
+              <li><i class="fas fa-check-circle"></i> Interview Preparation</li>
+              <li><i class="fas fa-check-circle"></i> Salary Negotiation Tips</li>
+              <li><i class="fas fa-check-circle"></i> Career Development Planning</li>
             </ul>
           </div>
         </div>
@@ -1264,37 +2274,123 @@
     </div>
   </section>
 
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-aos="fade-up">TESTIMONIALS</div>
+        <h2 class="section-title font-display" data-aos="fade-up" data-aos-delay="100">
+          What Our Candidates Say
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+          Real stories from real people who found their dream jobs through Shiv Shakti Enterprises.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "I got placed within 2 days of registration! The team was very helpful and guided me throughout the process. Now working in a reputed company with good salary. Highly recommended!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RK</div>
+              <div class="author-info">
+                <h5>Rajesh Kumar</h5>
+                <p>Production Operator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Best job consultancy in Neemrana! They helped me find a job that matches my ITI qualification. Professional service and genuine support. Thank you Shiv Shakti team!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PS</div>
+              <div class="author-info">
+                <h5>Priya Sharma</h5>
+                <p>Machine Operator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Excellent service! Got immediate placement in a leading company with attractive salary package. The staff is very supportive and maintains good relationship even after placement."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AV</div>
+              <div class="author-info">
+                <h5>Amit Verma</h5>
+                <p>Brazing Operator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section -->
-  <section class="section" id="about">
+  <section class="section bg-light-section" id="about">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0">
-          <div class="reveal">
-            <div class="section-badge" style="display: inline-block; margin-bottom: 25px;">ABOUT US</div>
-            <h2 class="section-title font-display" style="text-align: left;">Leading Job Consultancy in Neemrana</h2>
-            <p style="font-size: 1.1rem; color: var(--gray); line-height: 1.8; margin-bottom: 30px;">
-              <strong>Shiv Shakti Enterprises</strong> is a trusted name in manpower solutions and job placement services in Neemrana, Rajasthan. 
-              We specialize in connecting talented individuals with leading manufacturing companies in the region.
+          <div data-aos="fade-right">
+            <div class="section-badge" style="display: inline-block; margin-bottom: 28px;">ABOUT US</div>
+            <h2 class="section-title font-display" style="text-align: left; margin-bottom: 25px;">
+              Leading Job Consultancy in Neemrana
+            </h2>
+            <p style="font-size: 1.15rem; color: var(--gray-dark); line-height: 1.9; margin-bottom: 25px;">
+              <strong style="color: var(--primary-blue);">Shiv Shakti Enterprises</strong> is a trusted name in manpower solutions and job placement services in Neemrana, Rajasthan. We specialize in connecting talented individuals with leading manufacturing companies in the region.
             </p>
-            <p style="font-size: 1.1rem; color: var(--gray); line-height: 1.8; margin-bottom: 30px;">
-              With years of experience in the recruitment industry, we understand both employer requirements and candidate aspirations. 
-              Our mission is to bridge the gap between job seekers and companies, creating successful employment partnerships.
+            <p style="font-size: 1.1rem; color: var(--gray); line-height: 1.9; margin-bottom: 35px;">
+              With years of experience in the recruitment industry, we understand both employer requirements and candidate aspirations. Our mission is to bridge the gap between job seekers and companies, creating successful employment partnerships that drive mutual growth.
             </p>
 
-            <div style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%); border-left: 4px solid var(--primary-blue); padding: 25px; border-radius: 10px; margin-bottom: 30px;">
-              <h5 style="font-weight: 700; color: var(--dark); margin-bottom: 15px;"><i class="fas fa-map-marker-alt" style="color: var(--primary-blue); margin-right: 10px;"></i>Our Location</h5>
-              <p style="margin: 0; color: var(--gray); font-size: 1rem;">
+            <div style="background: white; border-left: 5px solid var(--primary-blue); padding: 30px; border-radius: var(--radius-lg); margin-bottom: 35px; box-shadow: var(--shadow-sm);">
+              <h5 style="font-weight: 700; color: var(--dark); margin-bottom: 18px; display: flex; align-items: center; gap: 12px;">
+                <i class="fas fa-map-marker-alt" style="color: var(--primary-blue); font-size: 1.3rem;"></i>
+                Our Location
+              </h5>
+              <p style="margin: 0; color: var(--gray-dark); font-size: 1.05rem; line-height: 1.7;">
                 <strong>Hero Chowk, Neemrana, Rajasthan - 301705</strong><br>
-                Easily accessible location in the heart of Neemrana industrial area.
+                Strategically located in the heart of Neemrana industrial area, easily accessible by all modes of transport.
               </p>
             </div>
 
             <div class="d-flex gap-3 flex-wrap">
               <a href="tel:9571016093" class="btn-hero btn-hero-primary">
-                <i class="fas fa-phone"></i>
+                <i class="fas fa-phone-volume"></i>
                 <span>Call: 9571016093</span>
               </a>
-              <a href="https://wa.me/919571016093" class="btn-hero btn-hero-secondary" style="background: var(--success-green); border-color: var(--success-green);">
+              <a href="https://wa.me/919571016093?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services" class="btn-hero btn-hero-whatsapp">
                 <i class="fab fa-whatsapp"></i>
                 <span>WhatsApp</span>
               </a>
@@ -1303,8 +2399,12 @@
         </div>
 
         <div class="col-lg-6">
-          <div class="reveal">
-            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3" alt="Job Placement Services" class="img-fluid" style="border-radius: 25px; box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);">
+          <div data-aos="fade-left">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                 alt="Professional Job Placement Services in Neemrana" 
+                 class="img-fluid" 
+                 style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl);"
+                 loading="lazy">
           </div>
         </div>
       </div>
@@ -1315,129 +2415,340 @@
   <section class="section cta-section" id="contact">
     <div class="container">
       <div class="cta-content">
-        <h2 class="font-display">Ready to Start Your Career?</h2>
-        <p>
-          Contact us today for immediate job placement assistance in Neemrana. 
-          Our team is ready to help you find the perfect job opportunity.
+        <h2 class="font-display" data-aos="fade-up">
+          Ready to Start Your Career Journey?
+        </h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Contact us today for immediate job placement assistance in Neemrana. Our dedicated team is ready to help you find the perfect job opportunity that matches your skills and aspirations.
         </p>
 
         <div class="contact-grid">
-          <div class="contact-card">
+          <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
             <i class="fas fa-phone-volume"></i>
             <div>
-              <strong style="display: block; margin-bottom: 10px; font-size: 1.1rem;">Call Us</strong>
-              <span style="font-size: 1.3rem; font-weight: 700;">9571016093</span>
+              <strong>Call Us Directly</strong>
+              <span style="display: block; margin-top: 8px; font-size: 1.4rem; font-weight: 700;">9571016093</span>
             </div>
           </div>
 
-          <div class="contact-card">
+          <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
             <i class="fab fa-whatsapp"></i>
             <div>
-              <strong style="display: block; margin-bottom: 10px; font-size: 1.1rem;">WhatsApp</strong>
-              <span style="font-size: 1.3rem; font-weight: 700;">9571016093</span>
+              <strong>WhatsApp Chat</strong>
+              <span style="display: block; margin-top: 8px; font-size: 1.4rem; font-weight: 700;">9571016093</span>
             </div>
           </div>
 
-          <div class="contact-card">
+          <div class="contact-card" data-aos="zoom-in" data-aos-delay="300">
             <i class="fas fa-map-marker-alt"></i>
             <div>
-              <strong style="display: block; margin-bottom: 10px; font-size: 1.1rem;">Visit Us</strong>
-              <span style="font-size: 1rem;">Hero Chowk, Neemrana - 301705</span>
+              <strong>Visit Our Office</strong>
+              <span style="display: block; margin-top: 8px;">Hero Chowk, Neemrana<br>Rajasthan - 301705</span>
             </div>
           </div>
 
-          <div class="contact-card">
+          <div class="contact-card" data-aos="zoom-in" data-aos-delay="400">
             <i class="fas fa-clock"></i>
             <div>
-              <strong style="display: block; margin-bottom: 10px; font-size: 1.1rem;">Working Hours</strong>
-              <span style="font-size: 1rem;">Mon-Sat: 9:00 AM - 7:00 PM</span>
+              <strong>Working Hours</strong>
+              <span style="display: block; margin-top: 8px;">Mon-Sat: 9:00 AM - 7:00 PM<br>Sunday: Closed</span>
             </div>
           </div>
         </div>
 
-        <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <div class="d-flex gap-3 justify-content-center flex-wrap" data-aos="fade-up" data-aos-delay="500">
           <a href="tel:9571016093" class="btn-hero btn-hero-primary" style="background: white; color: var(--primary-blue); border: none;">
-            <i class="fas fa-phone"></i>
+            <i class="fas fa-phone-volume"></i>
             <span>CALL NOW</span>
           </a>
-          <a href="https://wa.me/919571016093" class="btn-hero btn-hero-secondary">
+          <a href="https://wa.me/919571016093?text=Hi%2C%20I%27m%20interested%20in%20your%20job%20placement%20services" class="btn-hero btn-hero-secondary">
             <i class="fab fa-whatsapp"></i>
             <span>WhatsApp</span>
+          </a>
+          <a href="#jobs" class="btn-hero btn-hero-secondary">
+            <i class="fas fa-briefcase"></i>
+            <span>View Jobs</span>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Floating Button -->
-  <a href="tel:9571016093" class="floating-btn">
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <div class="brand-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div>
+                <h3>SHIV SHAKTI<br>ENTERPRISES</h3>
+              </div>
+            </div>
+            <p style="color: rgba(255,255,255,0.8); line-height: 1.8; margin-bottom: 25px;">
+              Your trusted partner for job placement and manpower solutions in Neemrana. Connecting talent with opportunity since years.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home"><i class="fas fa-angle-right"></i> Home</a></li>
+              <li><a href="#jobs"><i class="fas fa-angle-right"></i> Current Jobs</a></li>
+              <li><a href="#services"><i class="fas fa-angle-right"></i> Services</a></li>
+              <li><a href="#about"><i class="fas fa-angle-right"></i> About Us</a></li>
+              <li><a href="#contact"><i class="fas fa-angle-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="footer-section">
+            <h4>Our Services</h4>
+            <ul class="footer-links">
+              <li><a href="#jobs"><i class="fas fa-briefcase"></i> Job Placement</a></li>
+              <li><a href="#services"><i class="fas fa-users"></i> Manpower Supply</a></li>
+              <li><a href="#services"><i class="fas fa-user-tie"></i> Career Counseling</a></li>
+              <li><a href="#services"><i class="fas fa-handshake"></i> Recruitment Solutions</a></li>
+              <li><a href="#services"><i class="fas fa-file-alt"></i> Resume Building</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="tel:9571016093">
+                  <i class="fas fa-phone"></i> 9571016093
+                </a>
+              </li>
+              <li>
+                <a href="mailto:contact@shivshaktienterprises.com">
+                  <i class="fas fa-envelope"></i> contact@shivshaktienterprises.com
+                </a>
+              </li>
+              <li>
+                <a href="https://maps.google.com" target="_blank">
+                  <i class="fas fa-map-marker-alt"></i> Hero Chowk, Neemrana<br>
+                  <span style="padding-left: 30px;">Rajasthan - 301705</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-clock"></i> Mon-Sat: 9AM - 7PM
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p style="margin: 0;">
+          &copy; 2024 Shiv Shakti Enterprises. All Rights Reserved. | 
+          <a href="#" style="color: var(--accent-cyan); text-decoration: none;"> Privacy Policy</a> | 
+          <a href="#" style="color: var(--accent-cyan); text-decoration: none;"> Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <a href="tel:9571016093" class="floating-btn" aria-label="Call Now">
     <i class="fas fa-phone"></i>
   </a>
 
+  <a href="https://wa.me/919571016093?text=Hi%2C%20I%27m%20interested%20in%20job%20opportunities" class="floating-whatsapp" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.navbar');
-      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100
     });
 
-    // Smooth scroll
+    // Navbar scroll effect
+    const navbar = document.getElementById('mainNav');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      // Add scrolled class
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      lastScroll = currentScroll;
+    });
+
+    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const href = this.getAttribute('href');
+        
+        if (href !== '#' && href.length > 1) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          
+          if (target) {
+            const navHeight = navbar.offsetHeight;
+            const targetPosition = target.offsetTop - navHeight;
+            
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+
+            // Close mobile menu if open
+            const navbarCollapse = document.getElementById('navbarNav');
+            if (navbarCollapse.classList.contains('show')) {
+              const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+              bsCollapse.hide();
+            }
+
+            // Update active nav link
+            document.querySelectorAll('.nav-link').forEach(link => {
+              link.classList.remove('active');
+            });
+            this.classList.add('active');
+          }
         }
       });
     });
 
-    // Scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // Counter animation
-    const animateCounter = (element, target) => {
+    // Counter animation for stats
+    const animateCounter = (element, target, suffix = '') => {
+      const duration = 2000;
+      const steps = 60;
+      const stepValue = target / steps;
+      const stepDuration = duration / steps;
       let current = 0;
-      const increment = target / 50;
+      
       const timer = setInterval(() => {
-        current += increment;
+        current += stepValue;
         if (current >= target) {
-          element.textContent = target + (element.textContent.includes('+') ? '+' : '');
+          element.textContent = target + suffix;
           clearInterval(timer);
         } else {
-          element.textContent = Math.floor(current) + (element.textContent.includes('+') ? '+' : '');
+          element.textContent = Math.floor(current) + suffix;
         }
-      }, 30);
+      }, stepDuration);
     };
 
+    // Intersection Observer for counter animation
     const counterObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const text = entry.target.textContent;
-          const number = parseInt(text.replace(/[^0-9]/g, ''));
-          if (number && number > 0) {
-            animateCounter(entry.target, number);
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          const target = entry.target.getAttribute('data-count');
+          const suffix = entry.target.textContent.includes('+') ? '+' : '';
+          
+          if (target && parseInt(target) > 0) {
+            animateCounter(entry.target, parseInt(target), suffix);
           }
-          counterObserver.unobserve(entry.target);
         }
       });
     }, { threshold: 0.5 });
 
-    document.querySelectorAll('.stat-number').forEach(el => {
-      const text = el.textContent;
-      if (text !== '24/7') {
-        counterObserver.observe(el);
-      }
+    // Observe all stat numbers
+    document.querySelectorAll('.stat-number[data-count]').forEach(el => {
+      counterObserver.observe(el);
     });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    
+    window.addEventListener('scroll', () => {
+      const scrollY = window.pageYOffset;
+      
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    });
+
+    // Form validation (if you add a contact form later)
+    const validateForm = (form) => {
+      let isValid = true;
+      const inputs = form.querySelectorAll('input[required], textarea[required]');
+      
+      inputs.forEach(input => {
+        if (!input.value.trim()) {
+          isValid = false;
+          input.classList.add('is-invalid');
+        } else {
+          input.classList.remove('is-invalid');
+        }
+      });
+      
+      return isValid;
+    };
+
+    // Lazy loading for images
+    if ('loading' in HTMLImageElement.prototype) {
+      const images = document.querySelectorAll('img[loading="lazy"]');
+      images.forEach(img => {
+        img.src = img.dataset.src || img.src;
+      });
+    } else {
+      // Fallback for browsers that don't support lazy loading
+      const script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+      document.body.appendChild(script);
+    }
+
+    // Performance optimization: Debounce scroll events
+    const debounce = (func, wait) => {
+      let timeout;
+      return function executedFunction(...args) {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+    };
+
+    // Console greeting (Easter egg for developers)
+    console.log('%c👋 Welcome to Shiv Shakti Enterprises!', 'font-size: 20px; font-weight: bold; color: #2563EB;');
+    console.log('%cLooking for a job? Call us at 9571016093', 'font-size: 14px; color: #10B981;');
+    console.log('%cWebsite built with ❤️ for job seekers in Neemrana', 'font-size: 12px; color: #64748B;');
   </script>
 </body>
 </html>
