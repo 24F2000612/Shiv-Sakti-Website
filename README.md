@@ -49,25 +49,8 @@ bash
 Copy code
 cd Shiv-Sakti-Website
 Open index.html in your browser
-(Double-click or right-click → Open with browser)
 
- How to Host on GitHub Pages
-Go to Settings → Pages
-
-Select:
-
-Branch: main
-
-Folder: /root
-
-Click Save
-
-Your site will be live at:
-
-arduino
-Copy code
-https://udghosh-rao.github.io/Shiv-Sakti-Website/
-✨ Features
+# Features
 Clean and simple UI
 
 Fast loading static website
