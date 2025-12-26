@@ -25,7 +25,7 @@ The website is intended to:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 Shiv-Sakti-Website/
 │
@@ -38,10 +38,10 @@ Copy code
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 1. Clone the repository
-```bash
+
 git clone https://github.com/Udghosh-Rao/Shiv-Sakti-Website.git
 Open the folder
 
@@ -51,7 +51,7 @@ cd Shiv-Sakti-Website
 Open index.html in your browser
 (Double-click or right-click → Open with browser)
 
-🌍 How to Host on GitHub Pages
+ How to Host on GitHub Pages
 Go to Settings → Pages
 
 Select:
