@@ -1,11 +1,11 @@
-# 🕉️ Shiv Shakti – Official Website
+#  Shiv Shakti – Official Website
 
 This is a responsive and modern website created for **Shiv Shakti**, designed to represent spiritual, cultural, and organizational information in a clean and user-friendly way.  
 The website is built using **HTML, CSS, and JavaScript** and is suitable for hosting on **GitHub Pages** or any static hosting platform.
 
 ---
 
-## 🌐 Live Purpose
+##  Live Purpose
 
 The website is intended to:
 - Present information about **Shiv Shakti**
@@ -14,7 +14,7 @@ The website is intended to:
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 | Technology | Usage |
 |-----------|-------|
