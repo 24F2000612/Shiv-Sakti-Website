@@ -59,7 +59,7 @@ Mobile-friendly layout
 
 Easy to customize
 
-📌 Future Improvements
+# Future Improvements
 Add multiple pages (About, Contact, Events)
 
 Add gallery and media section
@@ -68,10 +68,10 @@ Improve animations and UI
 
 Add backend for contact form
 
-📄 License
+# License
 This project is open-source and free to use under the MIT License.
 
-👨‍💻 Author
+# Author
 Udghosh Rao
 GitHub: https://github.com/Udghosh-Rao
 
@@ -86,4 +86,4 @@ If you want, I can also:
 - Add a contact form  
 - Or make it a multi-page site  
 
-Just tell me 😄
+Just tell me 
